@@ -1,0 +1,19 @@
+Package: aoc2025
+Type: Package
+Title: Advent of Code 2025 solutions for Q1-4
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Z", "K")
+    )
+  )
+Description: Solutions for AOC 2025 questions (only 1-7).
+    The answer is provided when user uploads an input text file from 
+    https://adventofcode.com/.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
