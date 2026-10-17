@@ -3,4 +3,3 @@ inst/doc
 inst/extdata
 .Rhistory
 docs
-^.*\.Rproj$
