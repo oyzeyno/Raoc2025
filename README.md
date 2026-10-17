@@ -1,3 +1,65 @@
-R Package for a few solutions of Advent of Code 2025 (https://adventofcode.com/)
 
-Vignettes will be added later
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# Raoc2025
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of aoc2025 is to provide solutions for a few questions (Q1-3
+for now) of Advent of Code 2025 (<https://adventofcode.com/>)
+
+## Installation
+
+You can install the development version of aoc2025 like so:
+
+``` r
+# If you don't have devtools, install it by
+install.packages("devtools")
+#Install RWEBRIDGE-CHECKER by typing this on R console
+devtools::install("path_to_the_directory_of_the_package", dependencies = TRUE)
+```
+
+## Examples
+
+To get the solutions of part 1-2 of first 3 questions of AoC 2025
+
+Q1:
+
+``` r
+library(aoc2025)
+input_path <- system.file("extdata",
+                          "day1_input_20251201_example.txt",
+                          package = "aoc2025")
+input_text <- read_input(input_path)
+q1_answers <- times_zero(input_text)
+print(paste("Solution for Q1 part 1: ", q1_answers[1], "; part 2: ", q1_answers[2]))
+#> [1] "Solution for Q1 part 1:  3 ; part 2:  6"
+```
+
+Q2:
+
+``` r
+library(aoc2025)
+input_path <- system.file("extdata",
+                          "day2_input_20251202_example.txt",
+                          package = "aoc2025")
+input_text <- read_input(input_path)
+q2_answers <- return_invalid_sum(input_text)
+print(paste("Solution for Q2 part 1: ", q2_answers[1], "; part 2: ", q2_answers[2]))
+#> [1] "Solution for Q2 part 1:  1227775554 ; part 2:  4174379265"
+```
+
+Q3:
+
+``` r
+library(aoc2025)
+input_path <- system.file("extdata",
+                          "day3_input_20251203_example.txt",
+                          package = "aoc2025")
+input_text <- read_input(input_path)
+q3_answers <- find_joltage_sum(input_text)
+print(paste("Solution for Q3 part 1: ", q3_answers[1], "; part 2: ", q3_answers[2]))
+#> [1] "Solution for Q3 part 1:  357 ; part 2:  3121910778619"
+```

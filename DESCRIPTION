@@ -1,13 +1,15 @@
 Package: aoc2025
 Type: Package
-Title: Advent of Code 2025 solutions for Q1-4
+Title: Advent of Code 2025 solutions for Q1-3
 Version: 1.0.0
 Authors@R: c(
     person(
-      "Z", "K")
+      "Z", "K",
+      email = "jane@example.com",
+      role = c("aut", "cre")
     )
   )
-Description: Solutions for AOC 2025 questions (only 1-7).
+Description: Solutions for AOC 2025 questions (only 1-3).
     The answer is provided when user uploads an input text file from 
     https://adventofcode.com/.
 License: GPL (>= 3)
@@ -15,5 +17,8 @@ Encoding: UTF-8
 LazyData: true
 Config/roxygen2/version: 8.1.1
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
 Config/testthat/edition: 3
+VignetteBuilder: knitr
